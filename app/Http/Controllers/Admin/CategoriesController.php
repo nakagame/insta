@@ -59,13 +59,6 @@ class CategoriesController extends Controller
     }
 
     public function destroy($id) {
-        // $category = $this->category->findOrFail($id);
-    
-        // $uncategorizedCategory = $this->category->firstOrCreate(['name' => 'Uncategorized']);
-    
-        // $category->categoryPost()->update(['category_id' => $uncategorizedCategory->id]);
-    
-        // $category->delete();
         $this->category->destroy($id);
     
         return redirect()->back();
